@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  body{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        /* background-color: black; */
+    }
+.navbar2 {
+background-color: rgb(52, 50, 50);
+width: 100%;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+/* width: 100%; */
+}
+
+.navbar2 .navbar-content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px;
+}
+
+.logo-container {
+width: 20%;
+}
+
+.logo {
+width: 70%;
+/* max-width: 100%; */
+height: 100px;
+margin-bottom: 14px;
+/* background-color: blue; */
+
+}
+
+.nav-links-container {
+width: 80%;
+display: flex;
+justify-content: flex-start;
+}
+.nav-links-container>button{
+/* padding-left: 50px;
+*/
+color: white;
+margin-left: 40%;
+width: 200px;
+height: 40px;
+border: 1px solid white;
+background-color: rgb(52, 50, 50); 
+margin-bottom: 20px;
+}
+
+.nav-links-container a {
+padding: 10px;
+color: white;
+text-decoration: none;
+}
+
+.nav-links-container>a:hover {
+background-color: white;
+color: gray; 
+}
+#container{
+
+display: grid;
+gap: 20px;
+width: 80%;
+grid-template-columns: repeat(3,1fr);
+text-align: center;
+padding-top: 20px;
+margin: auto;
+
+}
+#container>div{
+/* border: 2px solid red; */
+border-radius: 20px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+#container>div>h2{
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: black;
+}
+#container>div>img{
+width: 100%;
+/* height: 50%; */
+}
+#container>div>button{
+/* padding-bottom: 20px; */
+min-width: 300px;
+min-height: 60px;
+font-family: 'Nunito', sans-serif;
+font-size: 22px;
+text-transform: uppercase;
+letter-spacing: 1.3px;
+font-weight: 700;
+color: #313133;
+background: #ac3b3b;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+border: none;
+border-radius: 1000px;
+box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+transition: all 0.3s ease-in-out 0s;
+cursor: pointer;
+outline: none;
+position: relative;
+padding: 10px;
+margin-bottom: 20px;
+}
+
+#container>div>button::before {
+content: '';
+border-radius: 1000px;
+min-width: calc(300px + 12px);
+min-height: calc(60px + 12px);
+border: 6px solid #00FFCB;
+box-shadow: 0 0 60px rgba(0,255,203,.64);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+opacity: 0;
+transition: all .3s ease-in-out 0s;
+}
+
+#container>div>.button:hover, .button:focus {
+color: #313133;
+transform: translateY(-6px);
+}
+
+#container>div>button:hover::before, button:focus::before {
+opacity: 1;
+}
+
+#container>div>button::after {
+content: '';
+width: 30px; height: 30px;
+border-radius: 100%;
+border: 6px solid #00FFCB;
+position: absolute;
+z-index: -1;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+animation: ring 1.5s infinite;
+}
+
+#container>div>button:hover::after, button:focus::after {
+animation: none;
+display: none;
+}
+#total{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  text-shadow: 2px 2px 0 #555, 3px 3px 0 #444, 4px 4px 0 #333;
+    text-align: center;
+    /* font-size: 40px; */
+    color: rgb(15, 115, 15);
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+#bt {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  
+}
+
+#bt:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#bt:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+#bt::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+#bt:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+#bt1{
+    margin-left: 50px;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    /* padding-right: 60px; */
+    /* margin: auto; */
+}
+#bt1>a{
+    padding-right: 70px;
+}
+#bt1 {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+#bt1:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#bt1:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+#bt1::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+#bt1:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+#st{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color:black
+}
+
+
+
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar2">
+            <div class="navbar-content">
+              <div class="logo-container">
+                <img src="./logo.png" alt="Logo" class="logo">
+              </div>
+              <div class="nav-links-container">
+                <a href="./index.html">Home</a>
+                
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Footwear</a>
+                <a href="#">Activity</a>
+                <a href="#">Featured</a>
+                <!-- <a href="#">Winter Sale</a> -->
+                <button id="bt1">
+                    <a href="./trending.html">Trending</a>
+                </button>
+               
+               
+                <button id="bt">
+                   <a href="./index.html">Home</a>
+                </button>
+                
+              </div>
+            </div>
+          </nav>
+    </header> 
+    <div id="st">
+      <button data-text="Awesome" class="button">
+        <span class="actual-text">&nbsp;Shoppers&nbsp;</span>
+        <span class="hover-text" aria-hidden="true">&nbsp;Shoppers&nbsp;</span>
+    </button>
+  </div>
+    
+    <h2 id="total"></h2>
+<div id="container"></div>
+
+</body>
+</html>
+<script>
+
+
+let Cart = JSON.parse(localStorage.getItem("cart")) || [];
+      let cont = document.getElementById("container");
+      let total = document.getElementById("total");
+
+      function display(data) {
+        cont.innerHTML = "";
+        let sum = 0;
+        data.forEach((ele) => {
+          let card = document.createElement("div");
+          let img = document.createElement("img");
+          let name = document.createElement("h2");
+          let price = document.createElement("h3");
+          let discription = document.createElement("h4");
+          let rating = document.createElement("h4");
+          let btn = document.createElement("button");
+
+          img.src = ele.image;
+          name.textContent = ele.pname;
+          price.textContent = `$${ele.price}`;
+          discription.textContent = ele.description;
+          rating.textContent = `Ratings -${ele.rating}`;
+          btn.textContent = "Remove from Cart";
+
+          btn.addEventListener("click", () => {
+            removeProduct(ele);
+          });
+
+          card.append(img, name, price, discription, rating, btn);
+          cont.appendChild(card);
+          sum += ele.price;
+        });
+        total.textContent = `Sub-Total: $${sum}`;
+      }
+
+      function removeProduct(product) {
+        Cart = Cart.filter((item) => item.id !== product.id);
+        localStorage.setItem("cart", JSON.stringify(Cart));
+        display(Cart);
+      }
+
+      display(Cart);
+    
+   
+</script>
+ 

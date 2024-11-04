@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+ 
+        .navbar1 {
+  background-color: white;
+  width: 100%;
+  
+}
+#btn1{
+  width: 150px;
+  height: 50px;
+  color: white;
+  background-color: rgb(52, 50, 50);
+  margin-left: 30px;
+}
+#tred{
+  margin-left: 450px;
+}
+
+
+
+.navbar1 .navbar-content {
+  display: flex;
+  justify-content: start;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar1 .navbar-text {
+  margin: 0;
+  text-align: start;
+}
+
+/* Navbar 2 */
+.navbar2 {
+  background-color: rgb(52, 50, 50);
+  width: 100%;
+}
+
+.navbar2 .navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo-container {
+  width: 20%;
+}
+
+.logo {
+  width: 70%;
+  /* max-width: 100%; */
+  height: 100px;
+  margin-bottom: 14px;
+  /* background-color: blue; */
+  
+}
+
+.nav-links-container {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+}
+#sr{
+  /* padding-left: 50px;
+   */
+   color: white;
+   margin-left: 40%;
+   width: 200px;
+   height: 40px;
+   border: 1px solid white;
+  background-color: rgb(52, 50, 50); 
+  margin-bottom: 20px;
+}
+
+.nav-links-container a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links-container>a:hover {
+  background-color: white;
+  color: gray;
+}
+.red{
+  background-color: rgb(160, 9, 9);
+  color: white;
+text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+.mainImg>img{
+  width: 100%;
+  /* margin-top: 20px;
+   */
+/* padding-top: 20px; */
+}
+.imgs{
+  display: flex;
+  gap: 20px;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+h2{
+  margin-left: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.mid
+{ 
+   /* border: 2px solid red; */
+   text-align: center;
+   padding-top: 100px;
+   padding-bottom: 100px;   
+}
+.mid>h1{
+  font-size: 60px;
+}
+.mid>button{
+  color: white;
+  background-color: black;
+  height: 30px;
+}
+.img2{
+  
+  text-align: center;
+}
+.img2Content{
+  text-align: center;
+}
+.img2Content>button{
+  border: none;
+  color: white;
+  background-color: black;
+  height: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.img3{
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+}
+.img3>div>img{
+  width: 100%;
+}
+.img3Content{
+  text-align: center;
+}
+.img4{
+  display: flex;
+  gap:20px;
+  width: 80%;
+  margin: auto;
+}
+.img5{ 
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.img5Content{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.img5Content>h1{
+  color: rgb(5, 122, 169);
+  font-size: 50px;
+}
+.img6{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5,1fr);
+  text-align: center;
+}
+.img6>div>img{
+  /* width: 10px; */
+  width: 100%;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.img7{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.img7>div>img{
+  width: 100%;
+}
+#btn1 {
+  --width: 150px;
+  --timing: 2s;
+  border: 0;
+  width: var(--width);
+  padding-block: 1em;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  background: rgb(64, 192, 87);
+  transition: all 0.2s;
+  border-radius: 3px;
+}
+
+#btn1:hover {
+  background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+  animation: var(--timing) linear dance6123 infinite;
+  transform: scale(1.1) translateY(-1px);
+}
+
+@keyframes dance6123 {
+  to {
+    background-position: var(--width);
+  }
+}
+
+.footer-99382 .row > div:not(:first-child) {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .footer-99382 .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.footer-99382 {
+    background-color: rgb(52, 50, 50);
+  padding: 40px 0;
+}
+
+/* Style the site logo */
+.footer-site-logo {
+  color:white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Style the footer links */
+.nav-links li {
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color:green;
+}
+
+/* Style the social icons */
+.social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color:white;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.social a:hover {
+  transform: scale(1.2);
+}
+
+/* Style the copyright text */
+.copyright {
+  color: white;
+  font-size: 14px;
+}
+h3{
+margin-left: 30px;
+color: white;
+}
+.icon-facebook>img{
+    width: 100%;
+}
+.col-md img{
+    width: 100%;
+}
+.col-md-4>a{
+  font-size: 30px;
+  margin-left: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar1">
+      <div class="navbar-content">
+        <span class="navbar-text">40% Off Select Winter Gear. <u>Shop Now ›</u> </span>
+        <span id="tred"><u><b>Click on Trending</b></u> </span>
+      </div>
+      
+    </nav>
+    <nav class="navbar2">
+      <div class="navbar-content">
+        <div class="logo-container">
+          <img src="./logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="nav-links-container">
+         
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
+          <a href="#">Footwear</a>
+          <a href="#">Activity</a>
+          <a href="#">Featured</a>
+          <a href="#">Men</a>
+          <button id="btn1"> <a href="./trending.html">Trending</a></button>
+          <button id="sr">Search</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="red">
+    <h1>Up To 40% Off Jackets & Boots</h1>
+    <h5>+ Up to 50% off select gear. Exclusions apply.</h5>
+    <h5><u>Shop Winter Sale</u></h5>
+  </div>
+  <div class="mainImg">
+    <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/37316_C_U_Q1_PFG_HP_Hero-v9_XL?$aem_pjpeg$" alt="">
+  </div>
+  <h2><b>Seasonal Essentials</b></h2>
+  <div class="imgs">
+    <div>
+     <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/37316_C_U_Q1_PFG_HP_VizNav_W?$aem_pjpeg$" alt="">
+     <h3>Women's</h3>
+    </div>
+    <div>
+      <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/37316_C_U_Q1_PFG_HP_VizNav_M?$aem_pjpeg$" alt="">
+      <h3>Men's</h3>
+    </div>
+    <div>
+      <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/37316_C_U_Q1_PFG_HP_VizNav_K-v2?$aem_pjpeg$" alt="">
+      <h3>Kid's</h3>
+    </div>
+    <div>
+      <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/37316_C_U_Q1_PFG_HP_VizNav_FW?$aem_pjpeg$" alt="">
+      <h3>Footwear</h3>
+    </div>
+  </div>
+  <div class="mid">
+    <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/20590_C_U_X1_SU20_CGR_HP_Banner_Black_Logo_resized_@2x?$aem_png$" alt="">
+    <h1><b>Get Rewards On Every Purchase</b></h1>
+    <p>Members get free shipping and rewards on every order.</p>
+    <button><b> IN & SHOP</b></button>
+    <button><b>JOIN FOR FREE</b></button>
+  </div>
+  <div class="img2">
+    <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/02-09_37315_Campaign_Mountain_v0_XL?$aem_pjpeg$" alt="">
+  </div>
+  <div class="img2Content">
+    <h1>The Mountain Is Calling</h1>
+    <p>Answer it in warm, waterproof, breathable gear.</p>
+    <button>SHOP SKI & SNOW</button>
+  </div>
+  <h2>Featured Favorites</h2>
+  
+<div class="img3">
+  <div><img src="https://media.istockphoto.com/id/172263787/photo/lettermans-jacket.jpg?s=612x612&w=0&k=20&c=GltTrA0QWgg_15Wvi87agM1JYk5h4HQINeMZnMR5fB4=" alt=""></div>
+  <div><img src="https://media.istockphoto.com/id/1210106212/photo/black-jacket-and-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=N1PmQECJcxIV9gF1JI2TTpZdhNpGmnQHCpDBjS2Vouk=" alt=""></div>
+  <div><img src="https://media.istockphoto.com/id/163208487/photo/male-coat-isolated-on-the-white.jpg?s=612x612&w=0&k=20&c=3Sdq5xnVS2jOYPNXI6JLwAumzyelcP_VgKVW0MVUhwo=" alt=""></div>
+  <div><img src="https://media.istockphoto.com/id/475570206/photo/denim-jacket.jpg?s=612x612&w=0&k=20&c=-RlIxj6nOvJYyIMu_GS8MYUzRLw3IEVwDXen-x5JSKY=" alt=""></div>
+</div> 
+<div class="img3Content">
+  <h1>NEED THE RIGHT JACKET ?</h1>
+<h5><U>Meet Your Match</U></h5>
+</div>
+<div class="img4">
+  <div><img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1-26_37313_COL_US_Mountain_HP_Refresh-SH-02_LG?$aem_pjpeg$" alt=""></div>
+  <div><img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/02-09_37315_Youth_NA_v1_XL?$aem_pjpeg$" alt=""></div>
+</div>
+
+<h2>How Do You Play?</h2>
+
+<div class="img5">
+  <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/12-26_COL_US_WIN21_WINTERSALE_CONTINGENCY_SUPERCAT_viznav02_04_v2?$aem_pjpeg$" alt="">
+  <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/03-01_27811_VizNav_Hiking_v0?$aem_pjpeg$" alt="">
+  <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/09-01_29285_c_u_lukecombs_brand_hp_subhero_visnavactivity?$aem_pjpeg$" alt="">
+  <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/12-26_COL_US_WIN21_WINTERSALE_CONTINGENCY_SUPERCAT_viznav02_02?$aem_pjpeg$" alt="">
+</div>
+<div class="img5Content">
+  <h1>"Nature. The world’s largest <br>playground."</h1>
+  <h3>Gert Boyle</h3>
+  <p>FOUNDER, COLUMBIA SPORTSWEAR</p>
+</div>
+<h2>Explore Best Sellers</h2>
+<div class="img6">
+  <div>
+    <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1917381_010_f?wid=768&hei=806&v=1676388993" alt="">
+    <h5>Men's Youngberg™ Insulated Jacket</h5>
+    <h4>$59.98</h4>
+    <h5>Rating - 4.8</h5>
+  </div>
+  <div>
+    <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1982661_639_f?wid=768&hei=806&v=1676388993" alt="">
+    <h5>Women's Joy Peak™ Omni-Heat™ Infinity Mid Insulated Hooded Jacket
+    </h5>
+    <h4>$89.92 <s>$180</s></h4>
+    <h5>Rating - 4.5</h5>
+  </div><div>
+    <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1868491_466_f?wid=768&hei=806&v=1676388993" alt="">
+    <h5>Women's Whirlibird™ IV Interchange Jacket</h5>
+    <h4>$114.98 <s>$230</s></h4>
+    <h5>Rating - 4.1</h5>
+  </div><div>
+    <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1866751_492_f?wid=768&hei=806&v=1676388993" alt="">
+    <h5>Men's Whirlibird™ IV Interchange Jacket</h5>
+    <h4>$137.92 <s>$230</s></h4>
+    <h5>Rating - 4.5</h5>
+  </div><div>
+    <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1864241_009_f?wid=768&hei=806&v=1676388993" alt="">
+    <h5>Men's Penns Creek™ II Parka</h5>
+    <h4>$95.98 <s>$240</s></h4>
+    <h5>Rating - 4.2</h5>
+  </div>
+</div>
+<h1>See you out there .</h1>
+<div class="img7">
+  
+
+<div>
+  <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/LUNAR_TEST_CLOSER_VX?$aem_pjpeg$" alt="">
+  <h3>Go Further</h3>
+  <p>Omni-Heat Infinity is heading <br>to the moon</p>
+  <p><u>Learn More</u></p>
+</div>
+<div>
+  <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/01-27_27664_2021_Site_Closer_TMOG_v0?$aem_pjpeg$" alt="">
+  <h3>Go Further</h3>
+  <p>A non-nonsense guide<br>to the great outdoors.</p>
+  <p><u>Explore the Guide</u></p>
+</div>
+<div>
+  <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/01-27_27664_2021_Site_Closer_Slide_Tech_v2?$aem_pjpeg$" alt="">
+  <h3>Go Further</h3>
+  <p>Keeping you warm,dry,<br>coll,&protected.</p>
+  <p><u>Explore our Tech</u></p>
+</div>
+<div>
+  <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/01-27_27664_Ambassador_Closer_Poster_v0?$aem_pjpeg$" alt="">
+  <h3>Go Further</h3>
+  <p>Reach new heights with <br>people who inspired.</p>
+  <p><u>Meet Our Ambassadors</u></p>
+</div>
+</div>
+</body>
+<footer class="footer-99382" style="background-image: url('images/hero_1.jpg');">
+        
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 pr-md-5">
+        <a href="#" class="footer-site-logo d-block mb-4">Shoppers</a>
+        <p></p>
+      </div>
+      <div class="col-md">
+        <h3>Discover</h3>
+        <ul class="list-unstyled nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md">
+        <h3>About</h3>
+        <ul class="list-unstyled nav-links">
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Journal</a></li>
+        </ul>
+      </div>
+      <div class="col-md">
+        <h3>Help</h3>
+        <ul class="list-unstyled nav-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+      <div class="col-md">
+        <h3>Follow Us</h3>
+        <ul class="social list-unstyled">
+          <li><a href="#" class="pl-0"><span class="icon-instagram">
+              <img src="https://www.svgrepo.com/show/506511/instagram.svg" alt="">
+          </span></a></li>
+          <li><a href="#"><span class="icon-twitter">
+              <img src="https://www.svgrepo.com/show/506517/linkedin.svg" alt="">
+          </span></a></li>
+          <li><a href="#"><span class="icon-facebook">
+              <img src="https://www.svgrepo.com/show/506477/facebook.svg" alt="">
+          </span></a></li>
+          <li><a href="#"><span class="icon-pinterest">
+              <img src="https://www.svgrepo.com/show/506611/twitter.svg" alt="">
+          </span></a></li>
+        
+        </ul>
+      </div>
+    </div> 
+
+    <div class="row ">
+      <div class="col-12 text-center">
+        <div class="copyright mt-5 pt-5">
+          <p style="margin-left: 30px;"><small>&copy; 2019&mdash;2020 All Rights Reserved.</small></p>
+        </div>
+      </div>
+    </div> 
+  </div>
+  
+</footer>
+</html>
